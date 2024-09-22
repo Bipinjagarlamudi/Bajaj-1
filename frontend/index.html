@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Roll Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>BFHL Frontend</h1>
+
+    <!-- Form with a textarea for JSON input -->
+    <form id="dataForm">
+        <label for="jsonInput">Enter JSON Data:</label><br>
+        <textarea id="jsonInput" rows="6" placeholder='e.g., {"data":["M", "1", "A", "b"]}'></textarea><br><br>
+
+        <!-- Multi-select Dropdown for filtering the response -->
+        <label for="responseFilter">Select Response Data to Display:</label><br>
+        <select id="responseFilter" multiple>
+            <option value="alphabets">Alphabets</option>
+            <option value="numbers">Numbers</option>
+            <option value="highest_lowercase_alphabet">Highest Lowercase Alphabet</option>
+        </select><br><br>
+
+        <button type="button" id="submitBtn">Submit</button>
+    </form>
+
+    <!-- Div for displaying the API response -->
+    <div id="responseDisplay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
